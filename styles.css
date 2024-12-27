@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Layout responsivo */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px; /* Espaçamento interno do container */
+  justify-items: center; /* Centraliza os cards horizontalmente */
+}
+
+.card {
+  background-color: #f9f9f9; /* Fundo claro para destaque */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 10px;
+  text-align: center; /* Centraliza texto e imagem */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+  transition: transform 0.2s ease-in-out; /* Animação para hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta o card levemente ao passar o mouse */
+}
+
+.card img {
+  width: 100px; /* Largura da imagem */
+  height: auto; /* Mantém proporção */
+  border-radius: 5px; /* Cantos arredondados na imagem */
+  margin-top: 10px;
+}
+
+.card h1 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
